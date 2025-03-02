@@ -29,7 +29,7 @@
 function forceDownload() {
     const link = document.createElement('a');
     link.href = "http://103.145.232.246/Data/movies/Hindi%20dubbed/Premalu%20%282024%29/Premalu.mp4";
-    link.download = "Premalu.mp4";  // Force download with custom filename
+    link.download = "Premalu.mp4";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
