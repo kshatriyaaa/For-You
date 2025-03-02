@@ -1,0 +1,171 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rashu {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        #btn {
+            height: 500px;
+            width: 800px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="rashu"><h1> Is For You Rashuu BaBY </h1></div>
+    <div id="btn">
+    <a href="#" onclick="forceDownload()">Download Now</a>
+</div>
+
+<script>
+function forceDownload() {
+    const link = document.createElement('a');
+    link.href = "http://103.145.232.246/Data/movies/Bollywood/2023/Satyaprem%20Ki%20Katha%20%282023%29/Satyaprem%20Ki%20Katha.mp4";
+    link.download = "Satyaprem_Ki_Katha.mp4";  // Force download with custom filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Video Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click Below to Download Video</h2>
+   
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Web Page</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* .page{
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        } */
+
+        .page h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* height: 100vh;
+            margin: 0; */
+        }
+
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+            background-size: contain;
+            animation: float 4s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        .download {
+            position: relative;
+            /* margin-top: 100px;
+            margin-left: 100px; */
+
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) scale(0.8); opacity: 1; }
+            50% { transform: translateY(-100px) scale(1); opacity: 0.7; }
+            100% { transform: translateY(-200px) scale(1.2); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>This Is For You Rashu BaBY ❤️</h1>
+        <p>Ye lo Download Now Par Click Karo Or Movie Download Karo</p>
+        <div class="download"> <button onclick="downloadVideo()">Download Now</button>
+    </div>
+</div>
+
+    <script>
+        function downloadVideo() {
+            const videoUrl = "http://103.145.232.246/Data/movies/Bollywood/2023/Satyaprem%20Ki%20Katha%20%282023%29/Satyaprem%20Ki%20Katha.mp4";  // Video URL
+
+            const link = document.createElement("a");
+            link.href = videoUrl;
+            link.download = "Satyaprem_Ki_Katha.mp4";  // Custom filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("hearts");
+            document.body.appendChild(heart);
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 500);
+    </script>
+</body>
+</html>
